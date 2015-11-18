@@ -1,3 +1,4 @@
+//<reference path="../../typings/tsd.d.ts" />
 import {Page, NavController} from 'ionic/ionic';
 import {WorkoutService} from '../services/WorkoutService';
 
