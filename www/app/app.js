@@ -1,14 +1,15 @@
 import {App, IonicApp, Platform} from 'ionic/ionic';
 import {Dashboard} from './dashboard/dashboard';
 import {ListPage} from './list/list';
-import {WorkoutService} from './services/WorkoutService';
+import {SampleService} from './services/sampleService';
+import {GeneralTabs} from './tabs/general-tabs'
 
 import "./app.scss";
 
 
 @App({
   templateUrl: 'app/app.html',
-  providers: [WorkoutService]
+  providers: [SampleService]
 })
 
 class MyApp {

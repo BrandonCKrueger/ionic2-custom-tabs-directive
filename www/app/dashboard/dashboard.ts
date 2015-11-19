@@ -1,20 +1,22 @@
 //<reference path="../../typings/tsd.d.ts" />
 import {Page, NavController} from 'ionic/ionic';
-import {WorkoutService} from '../services/WorkoutService';
+import {GeneralTabs} from '../tabs/general-tabs'
+import {SampleService} from '../services/sampleService';
 
 import "./dashboard.scss";
 
 @Page({
-  templateUrl: 'app/dashboard/dashboard.html'
+  templateUrl: 'app/dashboard/dashboard.html',
+  directives: [GeneralTabs]
 })
 export class Dashboard {
   public nav;
-  public workoutService; 
+  public sampleService; 
   
-  constructor(nav: NavController, workoutService: WorkoutService) {
+  constructor(nav: NavController, sampleService: SampleService) {
     this.nav = nav;
-    this.workoutService = workoutService;
+    this.sampleService = sampleService;
     
-    console.log(this.workoutService);
+    console.log(this.sampleService);
   }
 }
