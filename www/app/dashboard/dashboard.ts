@@ -2,12 +2,12 @@
 import {Page, NavController} from 'ionic/ionic';
 import {WorkoutService} from '../services/WorkoutService';
 
-import "./hello-ionic.scss";
+import "./dashboard.scss";
 
 @Page({
-  templateUrl: 'app/hello-ionic/hello-ionic.html'
+  templateUrl: 'app/dashboard/dashboard.html'
 })
-export class HelloIonicPage {
+export class Dashboard {
   public nav;
   public workoutService; 
   

@@ -1,5 +1,5 @@
 import {App, IonicApp, Platform} from 'ionic/ionic';
-import {HelloIonicPage} from './hello-ionic/hello-ionic';
+import {Dashboard} from './dashboard/dashboard';
 import {ListPage} from './list/list';
 import {WorkoutService} from './services/WorkoutService';
 
@@ -21,12 +21,12 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'Dashboard', component: Dashboard },
       { title: 'My First List', component: ListPage }
     ];
 
-    // make HelloIonicPage the root (or first) page
-    this.rootPage = HelloIonicPage;
+    // make Dashboard the root (or first) page
+    this.rootPage = Dashboard;
   }
 
   initializeApp() {
